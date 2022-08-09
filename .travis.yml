@@ -12,11 +12,11 @@ script:
 
 deploy:
   provider: elasticbeanstalk
-  region: 'us-west-2'
-  application: 'rest-app'
-  env: 'rest-app-env'
-  bucket_name: '<S3 bucket Name>'
-  bucket_path: 'rest-app'
+  region: 'us-east-2'
+  application: 'react-app'
+  env: 'Reactapp-env'
+  bucket_name: 'elasticbeanstalk-us-east-2-119035643913'
+  bucket_path: 'react-app'
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
